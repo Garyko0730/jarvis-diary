@@ -8,7 +8,29 @@ document.addEventListener('DOMContentLoaded', function() {
     initSkillPacks();
     initLastUpdate();
     initScrollReveal();
+    initMobileMenu();
 });
+
+// 移动端菜单
+function initMobileMenu() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links a');
+
+    if (mobileMenu) {
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    }
+
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+}
 
 // 初始化统计数字
 function initStats() {
