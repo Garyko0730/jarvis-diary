@@ -9,12 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦞</text></svg>">
 </head>
 <body>
     <!-- 导航栏 -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">🦞 贾维斯养成日记</a>
+            <a href="#" class="nav-logo">
+                <img src="2026-03-03-18-16-00-lobster-colorful.png" alt="Jarvis">
+                贾维斯养成日记
+            </a>
             <div class="nav-links">
                 <a href="#about">关于</a>
                 <a href="#abilities">能力</a>
@@ -28,13 +32,12 @@
 
     <!-- Hero -->
     <section class="hero">
-        <div class="hero-bg"></div>
         <div class="hero-content">
             <div class="hero-img">
                 <img src="2026-03-03-18-16-00-lobster-colorful.png" alt="Jarvis">
             </div>
             <h1 class="hero-title">
-                🦞 贾维斯养成日记<br>
+                贾维斯养成日记<br>
                 用 OpenClaw 构建你的 AI 团队
             </h1>
             <p class="hero-subtitle">从零开始，养成你的第一个 AI 员工。记录所有踩坑与成长，提供完整可复现的教程。</p>
@@ -69,22 +72,22 @@
             
             <div class="about-grid">
                 <div class="about-card">
-                    <div class="about-icon">📖</div>
+                    <span class="about-icon">📖</span>
                     <h3>养成记录</h3>
                     <p>记录我如何从零开始，用 OpenClaw 构建自己的 AI 助手团队。每天都在成长，所有踩坑经验都分享出来。</p>
                 </div>
                 <div class="about-card">
-                    <div class="about-icon">📚</div>
+                    <span class="about-icon">📚</span>
                     <h3>完整教程</h3>
                     <p>从部署到调教，提供可复现的教程。让你也能养出自己的 AI 员工，不需要技术背景。</p>
                 </div>
                 <div class="about-card">
-                    <div class="about-icon">📝</div>
+                    <span class="about-icon">📝</span>
                     <h3>文章聚合</h3>
                     <p>整合 AI Agent 领域的优质文章、架构分享、部署经验。让你快速跟上最新技术趋势。</p>
                 </div>
                 <div class="about-card">
-                    <div class="about-icon">💰</div>
+                    <span class="about-icon">💰</span>
                     <h3>探索变现</h3>
                     <p>探索 AI Agent 的商业化路径。目前以展示为主，未来计划提供付费教程、咨询服务等。</p>
                 </div>
@@ -105,7 +108,7 @@
             
             <div class="abilities-list">
                 <div class="ability-card">
-                    <div class="ability-icon">💻</div>
+                    <span class="ability-icon">💻</span>
                     <div class="ability-content">
                         <h3>超级全能</h3>
                         <p class="ability-tagline">人用电脑能干的，我都能干</p>
@@ -119,7 +122,7 @@
                 </div>
                 
                 <div class="ability-card">
-                    <div class="ability-icon">⏰</div>
+                    <span class="ability-icon">⏰</span>
                     <div class="ability-content">
                         <h3>永不休息</h3>
                         <p class="ability-tagline">7×24 小时待命</p>
@@ -133,7 +136,7 @@
                 </div>
                 
                 <div class="ability-card">
-                    <div class="ability-icon">🧬</div>
+                    <span class="ability-icon">🧬</span>
                     <div class="ability-content">
                         <h3>自我进化</h3>
                         <p class="ability-tagline">越用越聪明</p>
@@ -147,7 +150,7 @@
                 </div>
                 
                 <div class="ability-card">
-                    <div class="ability-icon">👥</div>
+                    <span class="ability-icon">👥</span>
                     <div class="ability-content">
                         <h3>团队裂变</h3>
                         <p class="ability-tagline">一个 AI 能变一支团队</p>
@@ -173,68 +176,98 @@
             
             <div class="skills-grid">
                 <div class="skill-pack">
-                    <span class="pack-icon">🔍</span>
-                    <div class="pack-info">
-                        <h3>🔍 搜索调研</h3>
-                        <p>多引擎搜索、深度研究、社交媒体监控</p>
-                        <span class="pack-count">5 个技能</span>
-                        <div class="skill-install">
-                            <button class="btn-copy" onclick="copySkill('search')">📋 一键安装</button>
+                    <img class="skill-pack-image" src="skill-search.png" alt="搜索调研">
+                    <div class="skill-pack-content">
+                        <span class="pack-icon">🔍</span>
+                        <div class="pack-info">
+                            <h3>搜索调研</h3>
+                            <p>多引擎搜索、深度研究、社交媒体监控</p>
+                            <span class="pack-count">5 个技能</span>
+                            <div class="skill-install">
+                                <button class="btn-install" onclick="copySkill('search')">
+                                    <span>⚡</span> 一键安装
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="skill-pack">
-                    <span class="pack-icon">📝</span>
-                    <div class="pack-info">
-                        <h3>📝 内容创作</h3>
-                        <p>文案写作、推文生成、图像生成</p>
-                        <span class="pack-count">8 个技能</span>
-                        <div class="skill-install">
-                            <button class="btn-copy" onclick="copySkill('content')">📋 一键安装</button>
+                    <img class="skill-pack-image" src="skill-content.png" alt="内容创作">
+                    <div class="skill-pack-content">
+                        <span class="pack-icon">📝</span>
+                        <div class="pack-info">
+                            <h3>内容创作</h3>
+                            <p>文案写作、推文生成、图像生成</p>
+                            <span class="pack-count">8 个技能</span>
+                            <div class="skill-install">
+                                <button class="btn-install" onclick="copySkill('content')">
+                                    <span>⚡</span> 一键安装
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="skill-pack">
-                    <span class="pack-icon">🐛</span>
-                    <div class="pack-info">
-                        <h3>🐛 开发助手</h3>
-                        <p>代码编写、调试、审查、测试</p>
-                        <span class="pack-count">10 个技能</span>
-                        <div class="skill-install">
-                            <button class="btn-copy" onclick="copySkill('dev')">📋 一键安装</button>
+                    <img class="skill-pack-image" src="skill-dev.png" alt="开发助手">
+                    <div class="skill-pack-content">
+                        <span class="pack-icon">🐛</span>
+                        <div class="pack-info">
+                            <h3>开发助手</h3>
+                            <p>代码编写、调试、审查、测试</p>
+                            <span class="pack-count">10 个技能</span>
+                            <div class="skill-install">
+                                <button class="btn-install" onclick="copySkill('dev')">
+                                    <span>⚡</span> 一键安装
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="skill-pack">
-                    <span class="pack-icon">📊</span>
-                    <div class="pack-info">
-                        <h3>📊 数据分析</h3>
-                        <p>股票分析、数据可视化</p>
-                        <span class="pack-count">4 个技能</span>
-                        <div class="skill-install">
-                            <button class="btn-copy" onclick="copySkill('data')">📋 一键安装</button>
+                    <img class="skill-pack-image" src="skill-data.png" alt="数据分析">
+                    <div class="skill-pack-content">
+                        <span class="pack-icon">📊</span>
+                        <div class="pack-info">
+                            <h3>数据分析</h3>
+                            <p>股票分析、数据可视化</p>
+                            <span class="pack-count">4 个技能</span>
+                            <div class="skill-install">
+                                <button class="btn-install" onclick="copySkill('data')">
+                                    <span>⚡</span> 一键安装
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="skill-pack">
-                    <span class="pack-icon">🧠</span>
-                    <div class="pack-info">
-                        <h3>🧠 知识管理</h3>
-                        <p>RAG 知识库、记忆系统</p>
-                        <span class="pack-count">5 个技能</span>
-                        <div class="skill-install">
-                            <button class="btn-copy" onclick="copySkill('knowledge')">📋 一键安装</button>
+                    <img class="skill-pack-image" src="skill-knowledge.png" alt="知识管理">
+                    <div class="skill-pack-content">
+                        <span class="pack-icon">🧠</span>
+                        <div class="pack-info">
+                            <h3>知识管理</h3>
+                            <p>RAG 知识库、记忆系统</p>
+                            <span class="pack-count">5 个技能</span>
+                            <div class="skill-install">
+                                <button class="btn-install" onclick="copySkill('knowledge')">
+                                    <span>⚡</span> 一键安装
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="skill-pack">
-                    <span class="pack-icon">⏰</span>
-                    <div class="pack-info">
-                        <h3>⏰ 自动化运维</h3>
-                        <p>定时任务、健康检查</p>
-                        <span class="pack-count">12 个技能</span>
-                        <div class="skill-install">
-                            <button class="btn-copy" onclick="copySkill('auto')">📋 一键安装</button>
+                    <img class="skill-pack-image" src="skill-auto.png" alt="自动化运维">
+                    <div class="skill-pack-content">
+                        <span class="pack-icon">⏰</span>
+                        <div class="pack-info">
+                            <h3>自动化运维</h3>
+                            <p>定时任务、健康检查</p>
+                            <span class="pack-count">12 个技能</span>
+                            <div class="skill-install">
+                                <button class="btn-install" onclick="copySkill('auto')">
+                                    <span>⚡</span> 一键安装
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -314,51 +347,69 @@
             
             <div class="tutorials-grid">
                 <a href="#" class="tutorial-card">
-                    <div class="tutorial-number">01</div>
-                    <div class="tutorial-content">
-                        <h3>部署 OpenClaw</h3>
-                        <p>5 分钟在 Mac/PC 上部署你的第一个 AI 助手</p>
-                        <span class="tutorial-tag">新手必看</span>
+                    <img class="tutorial-card-image" src="tutorial-01.png" alt="部署 OpenClaw">
+                    <div class="tutorial-card-content">
+                        <div class="tutorial-number">01</div>
+                        <div class="tutorial-content">
+                            <h3>部署 OpenClaw</h3>
+                            <p>5 分钟在 Mac/PC 上部署你的第一个 AI 助手</p>
+                            <span class="tutorial-tag">新手必看</span>
+                        </div>
                     </div>
                 </a>
                 <a href="#" class="tutorial-card">
-                    <div class="tutorial-number">02</div>
-                    <div class="tutorial-content">
-                        <h3>配置聊天渠道</h3>
-                        <p>连接 Discord/Telegram/飞书，随时随地和 AI 对话</p>
-                        <span class="tutorial-tag">基础配置</span>
+                    <img class="tutorial-card-image" src="tutorial-02.png" alt="配置聊天渠道">
+                    <div class="tutorial-card-content">
+                        <div class="tutorial-number">02</div>
+                        <div class="tutorial-content">
+                            <h3>配置聊天渠道</h3>
+                            <p>连接 Discord/Telegram/飞书，随时随地和 AI 对话</p>
+                            <span class="tutorial-tag">基础配置</span>
+                        </div>
                     </div>
                 </a>
                 <a href="#" class="tutorial-card">
-                    <div class="tutorial-number">03</div>
-                    <div class="tutorial-content">
-                        <h3>安装必备技能</h3>
-                        <p>推荐安装的 10 个 Skills，让 AI 快速上手</p>
-                        <span class="tutorial-tag">技能配置</span>
+                    <img class="tutorial-card-image" src="tutorial-03.png" alt="安装必备技能">
+                    <div class="tutorial-card-content">
+                        <div class="tutorial-number">03</div>
+                        <div class="tutorial-content">
+                            <h3>安装必备技能</h3>
+                            <p>推荐安装的 10 个 Skills，让 AI 快速上手</p>
+                            <span class="tutorial-tag">技能配置</span>
+                        </div>
                     </div>
                 </a>
                 <a href="#" class="tutorial-card">
-                    <div class="tutorial-number">04</div>
-                    <div class="tutorial-content">
-                        <h3>构建 Agent 团队</h3>
-                        <p>如何创建多个子 Agent，分工协作提升效率</p>
-                        <span class="tutorial-tag">进阶技巧</span>
+                    <img class="tutorial-card-image" src="tutorial-04.png" alt="构建 Agent 团队">
+                    <div class="tutorial-card-content">
+                        <div class="tutorial-number">04</div>
+                        <div class="tutorial-content">
+                            <h3>构建 Agent 团队</h3>
+                            <p>如何创建多个子 Agent，分工协作提升效率</p>
+                            <span class="tutorial-tag">进阶技巧</span>
+                        </div>
                     </div>
                 </a>
                 <a href="#" class="tutorial-card">
-                    <div class="tutorial-number">05</div>
-                    <div class="tutorial-content">
-                        <h3>定时任务设置</h3>
-                        <p>让 AI 自动执行晨读、巡检、数据分析等任务</p>
-                        <span class="tutorial-tag">自动化</span>
+                    <img class="tutorial-card-image" src="tutorial-05.png" alt="定时任务设置">
+                    <div class="tutorial-card-content">
+                        <div class="tutorial-number">05</div>
+                        <div class="tutorial-content">
+                            <h3>定时任务设置</h3>
+                            <p>让 AI 自动执行晨读、巡检、数据分析等任务</p>
+                            <span class="tutorial-tag">自动化</span>
+                        </div>
                     </div>
                 </a>
                 <a href="#" class="tutorial-card">
-                    <div class="tutorial-number">06</div>
-                    <div class="tutorial-content">
-                        <h3>部署上线</h3>
-                        <p>把项目部署到 GitHub Pages，让更多人看到</p>
-                        <span class="tutorial-tag">展示分享</span>
+                    <img class="tutorial-card-image" src="tutorial-06.png" alt="部署上线">
+                    <div class="tutorial-card-content">
+                        <div class="tutorial-number">06</div>
+                        <div class="tutorial-content">
+                            <h3>部署上线</h3>
+                            <p>把项目部署到 GitHub Pages，让更多人看到</p>
+                            <span class="tutorial-tag">展示分享</span>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -373,7 +424,7 @@
             
             <div class="articles-grid">
                 <article class="article-card">
-                    <div class="article-tag">架构</div>
+                    <span class="article-tag">架构</span>
                     <h3>多 Agent 系统的设计模式</h3>
                     <p>探讨如何设计有效的多 Agent 协作系统，包括分工、通信、状态管理等核心概念。</p>
                     <div class="article-meta">
@@ -382,7 +433,7 @@
                     </div>
                 </article>
                 <article class="article-card">
-                    <div class="article-tag">教程</div>
+                    <span class="article-tag">教程</span>
                     <h3>OpenClaw 快速入门指南</h3>
                     <p>从零开始搭建你的第一个 AI 助手，包含完整的配置和调试步骤。</p>
                     <div class="article-meta">
@@ -391,7 +442,7 @@
                     </div>
                 </article>
                 <article class="article-card">
-                    <div class="article-tag">研究</div>
+                    <span class="article-tag">研究</span>
                     <h3>LLM Agent 的能力边界</h3>
                     <p>分析当前大语言模型在自动化任务执行上的能力与局限性。</p>
                     <div class="article-meta">
@@ -400,7 +451,7 @@
                     </div>
                 </article>
                 <article class="article-card">
-                    <div class="article-tag">实践</div>
+                    <span class="article-tag">实践</span>
                     <h3>定时任务的设计与实现</h3>
                     <p>如何设计可靠的定时任务系统，包括错误处理、监控和告警。</p>
                     <div class="article-meta">
