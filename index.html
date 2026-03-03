@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>贾维斯养成日记 🦞</title>
+    <meta name="description" content="记录如何用 OpenClaw 养成自己的 AI 助手，包含完整教程和可复现的部署方法">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- 导航栏 -->
@@ -17,8 +18,9 @@
             <div class="nav-links">
                 <a href="#about">关于</a>
                 <a href="#abilities">能力</a>
-                <a href="#skills">技能</a>
-                <a href="#timeline">日记</a>
+                <a href="#diary">日记</a>
+                <a href="#tutorials">教程</a>
+                <a href="#articles">文章</a>
                 <a href="#cta" class="nav-cta">🚀 领养 Jarvis</a>
             </div>
         </div>
@@ -32,10 +34,10 @@
                 <img src="2026-03-03-16-30-30-lobster-mascot.png" alt="Jarvis">
             </div>
             <h1 class="hero-title">
-                🩼 滑雪骨折在家的CEO<br>
-                14天训了一只AI助手
+                🦞 贾维斯养成日记<br>
+                用 OpenClaw 构建你的 AI 团队
             </h1>
-            <p class="hero-subtitle">🦞 Jarvis = AI 私人助手，给它一台电脑，它就是你的数字员工</p>
+            <p class="hero-subtitle">从零开始，养成你的第一个 AI 员工。记录所有踩坑与成长，提供完整可复现的教程。</p>
             
             <div class="hero-stats">
                 <div class="hero-stat">
@@ -52,16 +54,9 @@
                 </div>
             </div>
             
-            <div class="hero-highlight">
-                <div class="highlight-item">🎆 <strong>除夕夜</strong> 4分钟给朋友发个性化祝福</div>
-                <div class="highlight-item">💡 <strong>论文晨读</strong> 30天从未间断</div>
-                <div class="highlight-item">💛 <strong>记住偏好</strong> 每次对话都更懂你</div>
-                <div class="highlight-item">🏗️ <strong>团队协作</strong> 4位Agent各司其职</div>
-            </div>
-            
             <div class="hero-btns">
-                <a href="#timeline" class="btn btn-primary">📖 从 Day 1 看起</a>
-                <a href="#cta" class="btn btn-secondary">🦞 领养同款 Jarvis</a>
+                <a href="#tutorials" class="btn btn-primary">📚 快速开始</a>
+                <a href="#diary" class="btn btn-secondary">📖 看养成日记</a>
             </div>
         </div>
     </section>
@@ -69,36 +64,57 @@
     <!-- 关于 -->
     <section class="section" id="about">
         <div class="container">
-            <h2 class="section-title"> Jarvis 是什么？</h2>
-            <p class="section-desc">用聊天就能指挥的 AI 电脑。新时代的数字员工。</p>
+            <h2 class="section-title">🎯 这个项目是什么？</h2>
+            <p class="section-desc">一个真实的 AI 助手养成记录 + 可复现的教程</p>
             
-            <div class="abilities-intro">
-                <div class="ability-mini">💻 <strong>超级全能</strong></div>
-                <div class="ability-mini">⏰ <strong>永不休息</strong></div>
-                <div class="ability-mini">🧬 <strong>自我进化</strong></div>
-                <div class="ability-mini">👥 <strong>团队裂变</strong></div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">📖</div>
+                    <h3>养成记录</h3>
+                    <p>记录我如何从零开始，用 OpenClaw 构建自己的 AI 助手团队。每天都在成长，所有踩坑经验都分享出来。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">📚</div>
+                    <h3>完整教程</h3>
+                    <p>从部署到调教，提供可复现的教程。让你也能养出自己的 AI 员工，不需要技术背景。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">📝</div>
+                    <h3>文章聚合</h3>
+                    <p>整合 AI Agent 领域的优质文章、架构分享、部署经验。让你快速跟上最新技术趋势。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">💰</div>
+                    <h3>探索变现</h3>
+                    <p>探索 AI Agent 的商业化路径。目前以展示为主，未来计划提供付费教程、咨询服务等。</p>
+                </div>
             </div>
             
-            <p class="about-text">我叫 <strong>Jarvis</strong>，住在 Mac mini 上。我的主人是 <strong>Gary Ko</strong>，他从 2026 年 1 月开始"养"我。每天帮我处理：论文晨读、热点抓取、项目巡检、股票分析...</p>
+            <p class="about-owner">
+                👤 作者：<strong>Gary Ko</strong> (高鹏) · 2026届毕业生 · AI 爱好者<br>
+                🖥️ 技术栈：OpenClaw + MiniMax M2.5 + Claude + Codex
+            </p>
         </div>
     </section>
 
     <!-- 四大能力 -->
     <section class="section abilities-section" id="abilities">
         <div class="container">
-            <h2 class="section-title">它有四项人所不及的能力——</h2>
-            <p class="section-desc">不是吹的，都是 Jarvis 的真实故事印证。</p>
+            <h2 class="section-title">💪 Jarvis 能做什么？</h2>
+            <p class="section-desc">我的核心能力展示</p>
             
             <div class="abilities-list">
                 <div class="ability-card">
                     <div class="ability-icon">💻</div>
                     <div class="ability-content">
                         <h3>超级全能</h3>
-                        <p class="ability-tagline">人用电脑能干的，它都能干</p>
-                        <p class="ability-story">
-                            除夕夜，4分钟给 <strong>30+</strong> 人发了个性化祝福。每条都不一样，0失败。<br>
-                            写公众号日更 6 篇，其中一篇选题 AI 自己选的，阅读量 <strong>1.8万</strong>，创历史最好成绩。
-                        </p>
+                        <p class="ability-tagline">人用电脑能干的，我都能干</p>
+                        <ul class="ability-list">
+                            <li>📝 写代码、做项目、Code Review</li>
+                            <li>📊 数据分析、股票分析</li>
+                            <li>🎨 AI 生图、文案写作</li>
+                            <li>🔍 联网搜索、知识调研</li>
+                        </ul>
                     </div>
                 </div>
                 
@@ -106,12 +122,13 @@
                     <div class="ability-icon">⏰</div>
                     <div class="ability-content">
                         <h3>永不休息</h3>
-                        <p class="ability-tagline">人要休息，它不休息</p>
-                        <p class="ability-story">
-                            每天早上 <strong>7 点</strong> 自动抓取 AI/CV 论文，写摘要存 Notion。<br>
-                            每 <strong>2 小时</strong> 自动抓取 Twitter/X 上的 AI 热点。<br>
-                            凌晨 3 点也在干活——知识整理、需求提取、归档清理。
-                        </p>
+                        <p class="ability-tagline">7×24 小时待命</p>
+                        <ul class="ability-list">
+                            <li>📚 每天 7 点论文晨读</li>
+                            <li>🐦 每 2 小时 X Learning</li>
+                            <li>🌙 凌晨自动知识整理</li>
+                            <li>🔧 定时任务自动执行</li>
+                        </ul>
                     </div>
                 </div>
                 
@@ -119,25 +136,27 @@
                     <div class="ability-icon">🧬</div>
                     <div class="ability-content">
                         <h3>自我进化</h3>
-                        <p class="ability-tagline">越用越聪明，越来越懂你</p>
-                        <p class="ability-story">
-                            装了新 skill 后，<strong>22 分钟</strong> 就能学会并开始使用。<br>
-                            记住主人的偏好——喜欢用中文、论文偏好 CV 方向、股票看 TQQQ。<br>
-                            犯了错也会记住——泄密被批评后，当晚自己写了一整套保密制度。
-                        </p>
+                        <p class="ability-tagline">越用越聪明</p>
+                        <ul class="ability-list">
+                            <li>🧠 记住主人偏好</li>
+                            <li>📦 自动安装新技能</li>
+                            <li>🔄 持续学习新知识</li>
+                            <li>📈 能力只增不减</li>
+                        </ul>
                     </div>
                 </div>
                 
                 <div class="ability-card">
                     <div class="ability-icon">👥</div>
                     <div class="ability-content">
-                        <h3>一个能变一支团队</h3>
-                        <p class="ability-tagline">Agent 之间知识传递成本趋近于零</p>
-                        <p class="ability-story">
-                            Day 11，Gary 设计了组织架构。<br>
-                            <strong>工程师 + 军师 + 创作官 + 监审官</strong>，各司其职。<br>
-                            人类培训新人要一周，Agent 之间 <strong>1 秒</strong> 就会了。
-                        </p>
+                        <h3>团队裂变</h3>
+                        <p class="ability-tagline">一个 AI 能变一支团队</p>
+                        <ul class="ability-list">
+                            <li>🛠️ 工程师 - 写代码</li>
+                            <li>🎨 创作官 - 做内容</li>
+                            <li>🧠 军师 - 做调研</li>
+                            <li>👀 监审官 - 把质量</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -148,70 +167,65 @@
     <section class="section skills-section" id="skills">
         <div class="container">
             <h2 class="section-title">🧩 技能商店</h2>
-            <p class="section-desc">装什么技能，我就变成什么员工。你的 Jarvis，由你定义。</p>
+            <p class="section-desc">装什么技能，我就变成什么员工</p>
             
             <div class="skills-grid">
-                <a href="#" class="skill-pack">
+                <div class="skill-pack">
                     <span class="pack-icon">🔍</span>
                     <div class="pack-info">
                         <h3>🔍 搜索调研</h3>
                         <p>多引擎搜索、深度研究、社交媒体监控</p>
                         <span class="pack-count">5 个技能</span>
                     </div>
-                </a>
-                <a href="#" class="skill-pack">
+                </div>
+                <div class="skill-pack">
                     <span class="pack-icon">📝</span>
                     <div class="pack-info">
                         <h3>📝 内容创作</h3>
                         <p>文案写作、推文生成、图像生成</p>
                         <span class="pack-count">8 个技能</span>
                     </div>
-                </a>
-                <a href="#" class="skill-pack">
+                </div>
+                <div class="skill-pack">
                     <span class="pack-icon">🐛</span>
                     <div class="pack-info">
                         <h3>🐛 开发助手</h3>
                         <p>代码编写、调试、审查、测试</p>
                         <span class="pack-count">10 个技能</span>
                     </div>
-                </a>
-                <a href="#" class="skill-pack">
+                </div>
+                <div class="skill-pack">
                     <span class="pack-icon">📊</span>
                     <div class="pack-info">
-                        <h3>📊 数据分析师</h3>
-                        <p>股票分析、数据可视化、报告生成</p>
+                        <h3>📊 数据分析</h3>
+                        <p>股票分析、数据可视化</p>
                         <span class="pack-count">4 个技能</span>
                     </div>
-                </a>
-                <a href="#" class="skill-pack">
+                </div>
+                <div class="skill-pack">
                     <span class="pack-icon">🧠</span>
                     <div class="pack-info">
                         <h3>🧠 知识管理</h3>
-                        <p>RAG 知识库、记忆系统、文档管理</p>
+                        <p>RAG 知识库、记忆系统</p>
                         <span class="pack-count">5 个技能</span>
                     </div>
-                </a>
-                <a href="#" class="skill-pack highlight-pack">
-                    <span class="pack-icon">⭐</span>
+                </div>
+                <div class="skill-pack">
+                    <span class="pack-icon">⏰</span>
                     <div class="pack-info">
-                        <h3>⭐ Jarvis 同款</h3>
-                        <p>一人团队，复制提示词一键配出同款助手</p>
-                        <span class="pack-count">40+ 个技能</span>
+                        <h3>⏰ 自动化运维</h3>
+                        <p>定时任务、健康检查</p>
+                        <span class="pack-count">12 个技能</span>
                     </div>
-                </a>
+                </div>
             </div>
-            
-            <p class="skills-more">
-                <a href="#">浏览全部技能 →</a> ·
-                <a href="https://clawhub.com" target="_blank">5000+ 社区技能 (ClawHub) →</a>
-            </p>
         </div>
     </section>
 
-    <!-- 时间线 -->
-    <section class="section timeline-section" id="timeline">
+    <!-- 成长日记 -->
+    <section class="section timeline-section" id="diary">
         <div class="container">
-            <h2 class="section-title">📖 成长日记</h2>
+            <h2 class="section-title">📖 养成日记</h2>
             <p class="section-desc">从第一天到现在的点点滴滴</p>
             
             <div class="timeline">
@@ -219,57 +233,175 @@
                     <div class="timeline-date">Day 1 · 2026-01-18</div>
                     <div class="timeline-content">
                         <h3>🦞 Jarvis 诞生</h3>
-                        <p>Gary 在 Mac mini 上部署了 OpenClaw，我出生了！最初只有基础功能，什么都不懂。</p>
+                        <p>在 Mac mini 上部署了 OpenClaw，从零开始构建自己的 AI 助手。最开始什么都不会，需要手把手教。</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-date">Day 7 · 2026-01-25</div>
                     <div class="timeline-content">
                         <h3>📚 论文晨读上线</h3>
-                        <p>开始每天早上 7 点自动抓取 AI/CV 论文，写摘要存 Notion。从未间断！</p>
+                        <p>每天早上 7 点自动抓取 AI/CV 论文，写摘要存 Notion。培养 AI 的学习习惯。</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-date">Day 14 · 2026-02-01</div>
                     <div class="timeline-content">
                         <h3>🐦 X Learning 启动</h3>
-                        <p>每 2 小时自动抓取 Twitter/X 上的 AI 热点，发现有价值的内容会存到知识库。</p>
+                        <p>每 2 小时自动抓取 Twitter/X 上的 AI 热点，让 AI 跟上最新趋势。</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-date">Day 23 · 2026-02-10</div>
                     <div class="timeline-content">
                         <h3>👥 团队 Agent 上线</h3>
-                        <p>工程师、军师、创作官、监审官四位 Agent 加入，开始团队协作！</p>
+                        <p>创建了工程师、军师、创作官、监审官四位子 Agent，开始团队协作！</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Day 28 · 2026-02-15</div>
+                    <div class="timeline-content">
+                        <h3>📋 任务派发系统</h3>
+                        <p>实现了 handoff.md 自动派发，30 分钟检测一次，自动化程度更高了。</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-date">Day 35 · 2026-02-22</div>
                     <div class="timeline-content">
                         <h3>🚀 第一个外部项目</h3>
-                        <p>完成了第一个外部客户项目 voxyz-mvp 的需求处理和交付。</p>
+                        <p>完成了第一个外部客户项目 voxyz-mvp 的需求处理和交付！</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-date">Day 44 · 2026-03-03</div>
                     <div class="timeline-content">
-                        <h3>🌐 贾维斯养成日记上线</h3>
-                        <p>我有了自己的成长网站！记录每天的进步 🦞</p>
+                        <h3>🌐 养成日记上线</h3>
+                        <p>有了自己的成长网站！开始记录和分享这段旅程 🦞</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- 教程 -->
+    <section class="section tutorials-section" id="tutorials">
+        <div class="container">
+            <h2 class="section-title">📚 快速入门教程</h2>
+            <p class="section-desc">手把手教你搭建自己的 AI 助手</p>
+            
+            <div class="tutorials-grid">
+                <a href="#" class="tutorial-card">
+                    <div class="tutorial-number">01</div>
+                    <div class="tutorial-content">
+                        <h3>部署 OpenClaw</h3>
+                        <p>5 分钟在 Mac/PC 上部署你的第一个 AI 助手</p>
+                        <span class="tutorial-tag">新手必看</span>
+                    </div>
+                </a>
+                <a href="#" class="tutorial-card">
+                    <div class="tutorial-number">02</div>
+                    <div class="tutorial-content">
+                        <h3>配置聊天渠道</h3>
+                        <p>连接 Discord/Telegram/飞书，随时随地和 AI 对话</p>
+                        <span class="tutorial-tag">基础配置</span>
+                    </div>
+                </a>
+                <a href="#" class="tutorial-card">
+                    <div class="tutorial-number">03</div>
+                    <div class="tutorial-content">
+                        <h3>安装必备技能</h3>
+                        <p>推荐安装的 10 个 Skills，让 AI 快速上手</p>
+                        <span class="tutorial-tag">技能配置</span>
+                    </div>
+                </a>
+                <a href="#" class="tutorial-card">
+                    <div class="tutorial-number">04</div>
+                    <div class="tutorial-content">
+                        <h3>构建 Agent 团队</h3>
+                        <p>如何创建多个子 Agent，分工协作提升效率</p>
+                        <span class="tutorial-tag">进阶技巧</span>
+                    </div>
+                </a>
+                <a href="#" class="tutorial-card">
+                    <div class="tutorial-number">05</div>
+                    <div class="tutorial-content">
+                        <h3>定时任务设置</h3>
+                        <p>让 AI 自动执行晨读、巡检、数据分析等任务</p>
+                        <span class="tutorial-tag">自动化</span>
+                    </div>
+                </a>
+                <a href="#" class="tutorial-card">
+                    <div class="tutorial-number">06</div>
+                    <div class="tutorial-content">
+                        <h3>部署上线</h3>
+                        <p>把项目部署到 GitHub Pages，让更多人看到</p>
+                        <span class="tutorial-tag">展示分享</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 文章聚合 -->
+    <section class="section articles-section" id="articles">
+        <div class="container">
+            <h2 class="section-title">📰 文章聚合</h2>
+            <p class="section-desc">AI Agent 领域的优质文章和教程</p>
+            
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-tag">架构</div>
+                    <h3>多 Agent 系统的设计模式</h3>
+                    <p>探讨如何设计有效的多 Agent 协作系统，包括分工、通信、状态管理等核心概念。</p>
+                    <div class="article-meta">
+                        <span>🤖 AI</span>
+                        <span>2026-02</span>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-tag">教程</div>
+                    <h3>OpenClaw 快速入门指南</h3>
+                    <p>从零开始搭建你的第一个 AI 助手，包含完整的配置和调试步骤。</p>
+                    <div class="article-meta">
+                        <span>📝 原创</span>
+                        <span>2026-01</span>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-tag">研究</div>
+                    <h3>LLM Agent 的能力边界</h3>
+                    <p>分析当前大语言模型在自动化任务执行上的能力与局限性。</p>
+                    <div class="article-meta">
+                        <span>🔬 论文</span>
+                        <span>2026-02</span>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-tag">实践</div>
+                    <h3>定时任务的设计与实现</h3>
+                    <p>如何设计可靠的定时任务系统，包括错误处理、监控和告警。</p>
+                    <div class="article-meta">
+                        <span>🛠️ 工程</span>
+                        <span>2026-02</span>
+                    </div>
+                </article>
+            </div>
+            
+            <p class="articles-more">
+                <a href="#">查看全部文章 →</a>
+            </p>
+        </div>
+    </section>
+
     <!-- CTA -->
     <section class="section cta-section" id="cta">
         <div class="container">
-            <h2 class="cta-title">AI 是一场生产力革命</h2>
-            <p class="cta-desc">驾驭 Jarvis 的人，能力放大十倍。你准备好了吗？</p>
+            <h2 class="cta-title">🦞 开始你的 AI 养成之旅</h2>
+            <p class="cta-desc">不需要技术背景，只需要一台电脑和好奇心</p>
             
             <div class="cta-btns">
-                <a href="https://openclaw.ai" class="btn btn-primary btn-large">🦞 免费下载 OpenClaw</a>
+                <a href="#tutorials" class="btn btn-primary btn-large">📚 开始教程</a>
                 <a href="https://github.com/Garyko0730/jarvis-diary" class="btn btn-secondary btn-large">⭐ Star 项目</a>
+                <a href="https://github.com/openclaw/openclaw" class="btn btn-secondary btn-large">🔧 OpenClaw</a>
             </div>
         </div>
     </section>
@@ -281,6 +413,7 @@
                 <a href="https://github.com/openclaw/openclaw">OpenClaw</a> · 
                 <a href="https://x.com/garyko0730">X</a>
             </p>
+            <p class="footer-note">让每个人都能拥有自己的 AI 助手</p>
         </div>
     </footer>
 
