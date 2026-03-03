@@ -31,7 +31,7 @@
         <div class="hero-bg"></div>
         <div class="hero-content">
             <div class="hero-img">
-                <img src="2026-03-03-16-30-30-lobster-mascot.png" alt="Jarvis">
+                <img src="2026-03-03-18-10-00-lobster-icon.png" alt="Jarvis">
             </div>
             <h1 class="hero-title">
                 🦞 贾维斯养成日记<br>
@@ -91,7 +91,7 @@
             </div>
             
             <p class="about-owner">
-                👤 作者：<strong>Gary Ko</strong> (高鹏) · 2026届毕业生 · AI 爱好者<br>
+                👤 作者：AI 开发者 · 持续探索 AI Agent 可能性<br>
                 🖥️ 技术栈：OpenClaw + MiniMax M2.5 + Claude + Codex
             </p>
         </div>
@@ -167,7 +167,9 @@
     <section class="section skills-section" id="skills">
         <div class="container">
             <h2 class="section-title">🧩 技能商店</h2>
-            <p class="section-desc">装什么技能，我就变成什么员工</p>
+            <p class="section-desc">装什么技能，我就变成什么员工 | 
+                <a href="https://clawhub.com" target="_blank" style="color: var(--primary);">🔗 查看更多 ClawHub 技能</a>
+            </p>
             
             <div class="skills-grid">
                 <div class="skill-pack">
@@ -176,6 +178,9 @@
                         <h3>🔍 搜索调研</h3>
                         <p>多引擎搜索、深度研究、社交媒体监控</p>
                         <span class="pack-count">5 个技能</span>
+                        <div class="skill-install">
+                            <button class="btn-copy" onclick="copySkill('search')">📋 一键安装</button>
+                        </div>
                     </div>
                 </div>
                 <div class="skill-pack">
@@ -184,6 +189,9 @@
                         <h3>📝 内容创作</h3>
                         <p>文案写作、推文生成、图像生成</p>
                         <span class="pack-count">8 个技能</span>
+                        <div class="skill-install">
+                            <button class="btn-copy" onclick="copySkill('content')">📋 一键安装</button>
+                        </div>
                     </div>
                 </div>
                 <div class="skill-pack">
@@ -192,6 +200,9 @@
                         <h3>🐛 开发助手</h3>
                         <p>代码编写、调试、审查、测试</p>
                         <span class="pack-count">10 个技能</span>
+                        <div class="skill-install">
+                            <button class="btn-copy" onclick="copySkill('dev')">📋 一键安装</button>
+                        </div>
                     </div>
                 </div>
                 <div class="skill-pack">
@@ -200,6 +211,9 @@
                         <h3>📊 数据分析</h3>
                         <p>股票分析、数据可视化</p>
                         <span class="pack-count">4 个技能</span>
+                        <div class="skill-install">
+                            <button class="btn-copy" onclick="copySkill('data')">📋 一键安装</button>
+                        </div>
                     </div>
                 </div>
                 <div class="skill-pack">
@@ -208,6 +222,9 @@
                         <h3>🧠 知识管理</h3>
                         <p>RAG 知识库、记忆系统</p>
                         <span class="pack-count">5 个技能</span>
+                        <div class="skill-install">
+                            <button class="btn-copy" onclick="copySkill('knowledge')">📋 一键安装</button>
+                        </div>
                     </div>
                 </div>
                 <div class="skill-pack">
@@ -216,8 +233,15 @@
                         <h3>⏰ 自动化运维</h3>
                         <p>定时任务、健康检查</p>
                         <span class="pack-count">12 个技能</span>
+                        <div class="skill-install">
+                            <button class="btn-copy" onclick="copySkill('auto')">📋 一键安装</button>
+                        </div>
                     </div>
                 </div>
+            </div>
+            
+            <div class="skill-warning">
+                ⚠️ <strong>安全提示：</strong>安装第三方技能前请仔细检查代码，或使用前先用 <a href="https://clawhub.com" target="_blank">ClawHub</a> 官方验证过的技能
             </div>
         </div>
     </section>
@@ -409,7 +433,7 @@
     <!-- 页脚 -->
     <footer>
         <div class="container">
-            <p>🦞 贾维斯养成日记 © 2026 Gary Ko · 
+            <p>🦞 贾维斯养成日记 © 2026 · 
                 <a href="https://github.com/openclaw/openclaw">OpenClaw</a> · 
                 <a href="https://x.com/garyko0730">X</a>
             </p>

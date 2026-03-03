@@ -766,3 +766,45 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+
+/* 技能安装按钮 */
+.skill-install {
+    margin-top: 12px;
+}
+
+.btn-copy {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-copy:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+.btn-copy:active {
+    transform: translateY(0);
+}
+
+/* 技能警告 */
+.skill-warning {
+    background: #fef3c7;
+    border: 1px solid #f59e0b;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    color: #92400e;
+    font-size: 0.95rem;
+}
+
+.skill-warning a {
+    color: var(--primary);
+    text-decoration: underline;
+}

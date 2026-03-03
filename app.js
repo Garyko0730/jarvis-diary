@@ -157,3 +157,109 @@ function initScrollReveal() {
     // 针对动态生成的元素，每隔一段时间检查一次新元素
     setInterval(observeElements, 1000);
 }
+
+// 一键安装技能
+const skillPrompts = {
+    search: `📥 **搜索调研技能包安装**
+
+请帮我安装以下 Skills：
+1. tavily-search - 深度研究搜索
+2. multi-search-engine - 多引擎搜索
+3. context7 - 文档搜索
+4. openviking - 知识库 RAG
+
+运行命令：
+\`\`\`bash
+clawhub install tavily-search
+clawhub install multi-search-engine
+clawhub install context7
+clawhub install openviking
+\`\`\``,
+    
+    content: `📥 **内容创作技能包安装**
+
+请帮我安装以下 Skills：
+1. copywriting - 文案优化
+2. humanizer - 去除AI味
+3. social-content - 社媒内容
+4. twitter - 推文生成
+5. ai-image-generation - AI生图
+
+运行命令：
+\`\`\`bash
+clawhub install copywriting
+clawhub install humanizer
+clawhub install social-content
+clawhub install twitter
+clawhub install ai-image-generation
+\`\`\``,
+    
+    dev: `📥 **开发助手技能包安装**
+
+请帮我安装以下 Skills：
+1. debug-pro - 代码调试
+2. requesting-code-review - 代码审查
+3. test-runner - 测试运行
+4. coding-agent - 代码生成
+
+运行命令：
+\`\`\`bash
+clawhub install debug-pro
+clawhub install requesting-code-review
+clawhub install test-runner
+clawhub install coding-agent
+\`\`\``,
+    
+    data: `📥 **数据分析技能包安装**
+
+请帮我安装以下 Skills：
+1. stock-deep-analysis - 股票分析
+2. us-stock-analysis - 美股分析
+3. python-executor - Python执行
+
+运行命令：
+\`\`\`bash
+clawhub install stock-deep-analysis
+clawhub install us-stock-analysis
+clawhub install python-executor
+\`\`\``,
+    
+    knowledge: `📥 **知识管理技能包安装**
+
+请帮我安装以下 Skills：
+1. ontology - 知识图谱
+2. notion - Notion集成
+3. summarize - 摘要生成
+
+运行命令：
+\`\`\`bash
+clawhub install ontology
+clawhub install notion
+clawhub install summarize
+\`\`\``,
+    
+    auto: `📥 **自动化运维技能包安装**
+
+请帮我安装以下 Skills：
+1. proactive-agent - 主动Agent
+2. recursive-self-improvement - 自我进化
+3. healthcheck - 健康检查
+
+运行命令：
+\`\`\`bash
+clawhub install proactive-agent
+clawhub install recursive-self-improvement
+clawhub install healthcheck
+\`\`\``
+};
+
+function copySkill(type) {
+    const prompt = skillPrompts[type];
+    if (prompt) {
+        navigator.clipboard.writeText(prompt).then(() => {
+            alert('✅ 安装指令已复制到剪贴板！\n\n打开你的 OpenClaw 对话框，粘贴即可安装。');
+        }).catch(err => {
+            console.error('复制失败:', err);
+        });
+    }
+}
